@@ -1,0 +1,365 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!-- Bootstrap Link -->
+
+
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Font Awesome Cdn -->
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+	<script defer src="script.js"></script>
+	
+	<scrit src="https://cdn.jsdelivr.net/npm/sweetalert2@11">
+
+<style>
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+button {
+    padding: 1em 2.1em 1.1em;
+    border-radius: 4px;
+    margin: 8px;
+    border: none;
+    background-color: orange;
+    color: #000000;
+    font-weight: 800;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: 0em -0.2rem 0em #B50717 inset;
+    transition: color 3s ease-in-out;
+}
+.center {
+  margin: 0;
+  position: absolute;
+  left: 71%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.right {
+  margin: 0;
+  position: absolute;
+  right: 15px;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.main-text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 650;
+	font-size: 50px;
+}
+
+#navbar{
+    background: #f9f9f9;
+}
+#logo{
+    font-size: 36px;
+    font-weight: 550;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+#logo span{
+    color: #ffa500;
+}
+.navbar-toggler span{
+    color: #ffa500;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 20px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    background: #ffa500;
+    color: white;
+}
+#navbar form button{
+    background: orange;
+    color: white;
+    border: none;
+}
+
+p.ex1 {
+	padding: 35px;
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.gallary{
+    margin-top: 50px;
+}
+.gallary .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.center-justified {
+  text-align: justify;
+  margin: 0 auto;
+  width: 70em;
+}
+
+#myImg {
+    padding: 1em 2.1em 1.1em;
+    border-radius: 4px;
+    margin: 8px;
+    border: none;
+    background-color: orange;
+    color: #000000;
+    font-weight: 800;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: 0em -0.2rem 0em #B50717 inset;
+    transition: color 3s ease-in-out;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+</style>
+	
+</head>
+<body>
+   
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+		  <img src="V-MOOTZ Logo.png" width=200 height=110 alt="logo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span><i class="fa-solid fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
+              <li class="nav-item"><a class="nav-link" href="About.html">ABOUT</a></li>
+              <li class="nav-item"><a class="nav-link" href="Products.html">PRODUCTS</a></li>
+			  <li class="nav-item"><a class="nav-link" href="Promotion.html">PROMOTION</a></li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search">
+              <button class="btn btn-primary" type="button">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+	<div>
+	<img src="About.png" width=100% alt="About V-MOOTZ">
+	</div>
+	<br />
+			<div class="row">
+			  
+			  <div class="center-justified"><p><font size="4">
+				Mootz, a research startup in the healthy food sector, has identified a niche where popular snack ingredients like potato, squash, and cheese lack recognition for their nutritional value. Despite being associated with cravings, these foods often fall short in providing essential nutrients. To bridge this gap, V-Mootz endeavors to deliver top-tier, nutritious snacks at reasonable prices, catering to health-conscious consumers seeking satisfying alternatives.
+				<br /><br />
+				One of V-Mootz's key innovations is V-Stickz, a snack specially crafted to address the challenge of children resisting vegetables. By creating this substitute, the company targets parents seeking nutritious options that can entice their kids away from traditional snacks. Furthermore, V-Mootz places a strong emphasis on fortifying their snacks with essential vitamins, recognizing the global prevalence of diseases. By infusing their products with vital nutrients, they aim not only to offer healthier snack options but also to contribute to the overall well-being of consumers amidst health challenges worldwide.
+				</font></p><br />
+
+			  </div>
+			</div>
+
+		<section class="book" id="details">
+		  <div class="container">
+
+			<div class="row">
+
+			  <div class="col-md-6 py-3 py-md-0">
+				<div class="card">
+				  <img src="Physical.jpg" height=20% alt="Location of the Store">
+				</div>
+			  </div>
+			  
+			  <div class="col-md-6 py-3 py-md-0">
+				<br />
+				<p style="text-align:center"><font style="color:orange" size="6"><b>Why lacto-ovo vegetarian?</b></font></p>
+				<p style="text-align:justify"><font size="4.5">Now that people are health conscious, it's the right time to introduce healthier alternative snacks; One of the best healthy diets is eating foods that consist of Lacto-ovo vegetarian. A lacto-ovo vegetarian diet avoids meat and fish while consuming eggs and dairy products. People may choose a lactoovo-vegetarian diet for ethical reasons, such as animal rights or environmental protection. A lacto-ovo vegetarian diet has some health benefits, including anti-inflammatory properties, blood pressure reduction, diabetes prevention, and weight management.</font></p><br />
+				<p style="text-align:justify"><font size="4.5">The company produces a delicious healthy snack that disguises vegetables into a more appealing and palatable. V-Stickz and the V-Ballz main ingredients are made from vegetables; Offering healthier alternative snacks that would break the stereotype that vegetables are healthy but unappealing, particularly to children. The V-Stickz and VBallz will be able to provide Vitamins and Nutrients that are good especially for the teen-adults. V-mootz distinct themselves from their competitors based on the benefits they provide to your body as stated a while ago.</p>
+				<div class="right">
+				<br /><br />
+			<button><img id="myImg1" src="coreval.png" alt="Core Values" style="height:10px;width:10px"></button><span></span><span></span><button><img id="myImg2" src="misvis.png" alt="Mission and Vision" style="height:10px;width:10px"></button><br />
+
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+var modal = document.getElementById("myModal");
+var img = document.getElementById("myImg1");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+<script>
+var modal = document.getElementById("myModal");
+var img = document.getElementById("myImg2");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+</section>
+
+	<br />
+
+	<section class="book" id="details">
+		  <div class="container">
+			<div class="row">
+			  
+			  <div class="col-md-6 py-3 py-md-7">
+				<p style="text-align:Justify"><font size="6" color="orange"><b>Enjoy DISCOUNTS and REWARDS!</b></font></p>
+				<p style="text-align:justify"><font size="4.5">
+				Join our loyalty program today and feast on exclusive perks! Earn points every time you dine with us and unlock mouthwatering discounts and freebies. Plus, enjoy priority access to new menu items, special event invitations, and personalized offers tailored just for you.
+				<br /><br />
+				Whether you're a regular or a first-time visitor, our loyalty program ensures every bite is a rewarding experience. Start earning points today and let your taste buds lead the way to a world of culinary delights.</font></p>
+				<br />
+				<div>
+				<p style="text-align:center">
+				<a href="Products.html">
+				<button >ORDER NOW</button>
+				</a>
+				</p>
+				</div>
+			  </div>
+			  <div class="col-md-5 py-0 py-md-1">
+				<div class="card">
+				<img src="Loyalty.png" width="700px" alt="Loyalty Card">
+				</div>
+			  </div>
+			</div>
+		  </div>   
+		 </div>
+		</section>
+ 
+</body>
+</html>

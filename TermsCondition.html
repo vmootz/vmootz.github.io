@@ -1,0 +1,427 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Condition</title>
+
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!-- Bootstrap Link -->
+
+
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Font Awesome Cdn -->
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+	
+	<scrit src="https://cdn.jsdelivr.net/npm/sweetalert2@11">
+
+<style>
+body {
+	background-image: url(///.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;  
+	background-size: cover;
+}
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+.home{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(VMOOTZbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+button {
+    padding: 1em 2.1em 1.1em;
+    border-radius: 4px;
+    margin: 8px;
+    border: none;
+    background-color: orange;
+    color: #000000;
+    font-weight: 800;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: 0em -0.2rem 0em #B50717 inset;
+    transition: color 3s ease-in-out;
+}
+.center {
+  margin: 0;
+  position: absolute;
+  left: 71%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+    footer{
+        background: #343434;
+        padding-top: 50px;
+    }
+    .container{
+        width: 1140px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .footer-content{
+        width: 33.3%;
+    }
+    h3{
+        font-size: 28px;
+		color: white;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .footer-content p{
+        width: 325px;
+        margin: auto;
+		color: white;
+        padding: 5px;
+		text-align: center;
+    }
+    .footer-content ul{
+        text-align: center;
+    }
+    .list{
+        padding: 0;
+    }
+    .list li{
+        width: auto;
+        text-align: center;
+        list-style-type:none;
+        padding: 7px;
+        position: relative;
+    }
+    .list li::before{
+        content: '';
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 100%;
+        width: 0;
+        height: 2px;
+        background: #f18930;
+        transition-duration: .5s;
+    }
+    .list li:hover::before{
+        width: 70px;
+    }
+    .social-icons{
+        text-align: center;
+        padding: 0;
+    }
+    .social-icons li{
+        display: inline-block;
+        text-align: center;
+		color: white;
+        padding: 5px;
+    }
+    .social-icons i{
+        color: white;
+        font-size: 25px;
+    }
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        color: #f18930;
+    }
+    .social-icons i:hover{
+        color: #f18930;
+    }
+    .bottom-bar{
+        background: #f18930;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 50px;
+    }
+    .bottom-bar p{
+        color: #343434;
+        margin: 0;
+        font-size: 16px;
+        padding: 7px;
+    }
+
+#navbar{
+    background: #f9f9f9;
+}
+#logo{
+    font-size: 36px;
+    font-weight: 550;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+#logo span{
+    color: #ffa500;
+}
+.navbar-toggler span{
+    color: #ffa500;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 20px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    background: #ffa500;
+    color: white;
+}
+#navbar form button{
+    background: orange;
+    color: white;
+    border: none;
+}
+<!-- Navbar End -->
+
+<!-- Header Start -->
+p.ex1 {
+	padding: 350px;
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.gallary{
+    margin-top: 50px;
+}
+.gallary .card{
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+.gallary .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.gallary .card img:hover{
+    transform: scale(1.1);
+}
+
+.center-justified {
+  text-align: justify;
+  margin: 0 auto;
+  width: 70em;
+}
+<!-- About V-MOOTZ End -->
+
+<!-- Section Book Start -->	
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+<!--Section Book End -->
+
+</style>
+	
+</head>
+<body>
+   
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+		  <img src="V-MOOTZ Logo.png" width=200 height=110 alt="logo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span><i class="fa-solid fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
+              <li class="nav-item"><a class="nav-link" href="About.html">ABOUT</a></li>
+              <li class="nav-item"><a class="nav-link" href="Products.html">PRODUCTS</a></li>
+			  <li class="nav-item"><a class="nav-link" href="Promotion.html">PROMOTION</a></li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search">
+              <button class="btn btn-primary" type="button">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- Navbar End -->
+	
+	<!-- Terms and Conditions V-MOOTZ Start -->
+	<div>
+	<img src="TermsCon.png" width=100% alt="Terms and Condition of V-MOOTZ">
+	</div>
+	<!-- Terms and Conditions End -->
+	
+	<!-- Terms and Conditions Content Start -->
+	<section class="terms-and-conditions" id="T&C">
+		<br />
+		<div class="center-justified">
+		<p>These Terms and Conditions shall apply to all orders of V-MOOTZ products (“Products”) of a customer through this V-MOOTZ Website (“Site”). By placing an order for Products through this Site, you understand, agree with, and accept: (i) these Terms and Conditions and any corresponding changes thereto which we may implement from time to time; and (ii) our Privacy Policy in connection with how we process your personal information collected from this Site.</p>
+		<p>For purposes of these Terms and Conditions, “V-MOOTZ”, “our” or “we” shall refer to V-MOOTZ, the business itself, while “customer” or “you” shall refer to the customer who intends to purchase the Products from this Site.</p>
+
+		<p><b>I. Intellectual Property</b><br/>The Platform and all content, including but not limited to text, images, graphics, and software, are the property of V-Mootz or its licensors. You may not reproduce, modify, display, sell, or distribute the Platform or any content without our prior written permission.</p>
+
+		<p><b>II. User Conduct</b><br/>You agree to use the platform only for lawful purposes and in accordance with these Terms. You may not use the platform to:</p>
+		<ul class="list">
+		<div class="center-justified">
+		  <li class="list-item">Harass, threaten, or intimidate others</li>
+		  <li class="list-item">Post or transmit offensive or inappropriate content</li>
+		  <li class="list-item">Use the Platform for commercial purposes without our prior written permission</li>
+		  <li class="list-item">Violate any applicable laws or regulations</li>
+		</div>
+		</ul>
+		<p><b>III. Fulfillment of Order</b><br />The online order submitted through this ordering platform will be fulfilled via delivery only. The delivery order is fulfilled either through other third-party delivery services which we may engage. We reserve the right to revise or add order fulfillment options in the future.<p>
+		<p><b>IV. Submission of Order</b><br />Upon submission of your online order, you are authorizing us to process your online order and preparation of the Products you have specified on your order form. However, we reserve the right to refuse the processing of your order without any notification should we find any incorrect or incomplete details, or any previous spurious transactions with the given personal information.<br/><br/>Also, non-response to SMS and calls from either store, or delivery rider may result to late or non-delivery of the Products and should not be taken against us. Additional verification call or confirmation call may be required to proceed with your order.</p>
+		<p><b>V. Advance Order </b><br /> Delivery: <br />If you wish to order in advance through this delivery website, you may place your order at least two (2) hours before your expected delivery time.<br /><br /> Pick Up:<br /> You may order in advance through this website by choosing your preferred date and time.
+		<p><b>VI. Changes of Order</b><br /> For Delivery, changes in your order or delivery time can be made within five (5) minutes from the time that the order was placed, by calling the V-MOOTZ store that received the order or by clicking “Message to Store” in the Order Confirmation page/email. <br /><br /> For Pick Up, changes in your order can be made prior to clicking the “prepare order” button by clicking “Message to Store” in the Order Confirmation page/email. Once “Prepare Order” button has been clicked, your order is considered final and may no longer be changed.<br /><br /> If you wish to change your order prior to delivery or pick up, please call (through the contact number provided in the Order Confirmation) or message (through the “Message to Store” feature of the site) the V-MOOTZ store within the timeframe stated above, and provide the details of your order included in the Order Confirmation. Changes in your order that are confirmed by the pertinent Jollibee store will reset the forty-five (45) minute delivery guarantee time and will likewise be subject to these terms and conditions. You understand that the total amount of your order will be changed should there be any changes in your order, and that you agree to pay the new total amount. Thus: </p>
+			<ul>	
+				<li>If you paid for your order online via credit/debit card, any additional price difference as a result of changing your order must be paid in cash, payable upon delivery or pick up. </li>
+				<li>If, as a result of any change/s you make to your order, the total amount payable is less than the amount paid online via credit/debit card, any amount paid in excess of the new total amount payable shall be refunded to you by your own bank. You understand and agree that in such a case, we will not process the refund on your behalf, and that you are personally responsible for processing the refund with your own issuing bank. </li>
+				<li>If you choose to pay by credit/debit card upon delivery or pick up (card present), the total amount shall be chargeable and payable upon delivery or pick up. </li>
+			</ul>
+		<p>If any of the changes to order include promotions which are only available for limited periods, any changes to your order may mean that the promotions are no longer available by the time the changes are made. <br /><br /> We reserve the right to refuse any modification in case the order has already been dispatched for delivery prior to receipt of your request. </p>
+		<p><b>VII. Cancellation of Orders</b><br />Delivery orders:<br /><br /> Orders may be cancelled within five (5) minutes from the time that the order was placed by calling or messaging the Jollibee store that received your order. Cancellation immediately after the 5th minute from the time that the Order Confirmation was received will no longer be valid. You understand and agree that cancellation beyond the 5th minute will require you to pay the full amount of the order placed by you.<br /><br />We reserve the right to refuse any cancellation in case the order has already been dispatched for delivery prior to receipt of your request for cancellation.<br /><br />Pick up orders: <br /><br />Orders prior to clicking “Prepare Order” button may be cancelled anytime until 10 minutes before pick up time. Once the “Prepare Order” button is already pressed, cancellation of orders will no longer be valid. You understand and agree that cancellation beyond the 10th minute before the pick up time will require you to pay the full amount of the order placed by you.<br /><br />We reserve the right to refuse any cancellation in case the order has already been prepared for pick up to receipt of your request for cancellation.<br /><br />If payment is made via credit/debit card and the cancellation of order was successful, it will be your responsibility to contact the issuing bank to cancel the payment made.</p>			
+			
+			<p><b>VIII. Warranty Disclaimer</b><br />The Platform is provided on an "as is" and "as available" basis. We disclaim all warranties, express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement.</p>
+
+		<p><b>IX. Limitation of Liability</b><br />In no event will we be liable for any damages, including but not limited to incidental, consequential, or punitive damages, arising out of or in connection with your use of the Platform.</p>
+
+		<p><b>X. Changes to These Terms</b><br />We may update these Terms from time to time. We will notify you of any changes by posting the updated Terms on our website. Your continued use of the Platform after the effective date of the updated Terms will constitute your acceptance of the updated Terms.</p>
+
+		<p><b>XI. Contact Us</b><br /> If you have a) concerns or feedback on your orders made directly from V-MOOTZ and b) questions regarding the aforementioned this Terms and Conditions, please contact us through: <br /><br />Customer Care Hotline: <a href="tel:0916 372 1702">0916 372 1702</a><br />For orders made through Grabfood and Foodpanda, place your feedback through these links: </p>
+			<ul>
+				<li><a href="https://help.grab.com/passenger/en-ph//">GRAB</a></li>
+				<li><a href="https://www.foodpanda.ph/contents/contact.htm">FOOD PANDA</a></li>
+			</ul>
+	  </div>
+	</section>
+	<!-- Terms and Conditions Content End -->
+	   <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>Email: vmootz@gmail.com</p>
+                <p>Phone: 0916 372 1702</p>
+                <p>Zobel Street, Barangay 663 Ermita, Manila</p>
+            </div>
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                 <ul class="list">
+                    <li><a href="Promotion.html">PROMOTION</a></li>
+                    <li><a href="PrivacyNotice.html">PRIVACY NOTICE</a></li>
+                    <li><a href="TermsCondition.html">TERMS & CONDITION</a></li>
+                    <li><a href="CustomerCare.html">CUSTOMER CARE</a></li>
+                 </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                 <li><a href="https://www.facebook.com/profile.php?id=100092534678077"><i class="fab fa-facebook"></i></a></li>
+                 <li><a href="https://www.instagram.com/v_mootz.ph/"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+                </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2024 V-MOOTZ. All rights reserved</p>
+        </div>
+    </footer>
+	

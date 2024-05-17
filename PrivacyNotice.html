@@ -1,0 +1,486 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Notice</title>
+
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!-- Bootstrap Link -->
+
+
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Font Awesome Cdn -->
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+	
+	<scrit src="https://cdn.jsdelivr.net/npm/sweetalert2@11">
+
+<style>
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+button {
+    padding: 1em 2.1em 1.1em;
+    border-radius: 4px;
+    margin: 8px;
+    border: none;
+    background-color: orange;
+    color: #000000;
+    font-weight: 800;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: 0em -0.2rem 0em #B50717 inset;
+    transition: color 3s ease-in-out;
+}
+.center {
+  margin: 0;
+  position: absolute;
+  left: 71%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+    footer{
+        background: #343434;
+        padding-top: 50px;
+    }
+    .container{
+        width: 1140px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .footer-content{
+        width: 33.3%;
+    }
+    h3{
+        font-size: 28px;
+		color: white;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .footer-content p{
+        width: 325px;
+        margin: auto;
+		color: white;
+        padding: 5px;
+		text-align: center;
+    }
+    .footer-content ul{
+        text-align: center;
+    }
+    .list{
+        padding: 0;
+    }
+    .list li{
+        width: auto;
+        text-align: center;
+        list-style-type:none;
+        padding: 7px;
+        position: relative;
+    }
+    .list li::before{
+        content: '';
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 100%;
+        width: 0;
+        height: 2px;
+        background: #f18930;
+        transition-duration: .5s;
+    }
+    .list li:hover::before{
+        width: 70px;
+    }
+    .social-icons{
+        text-align: center;
+        padding: 0;
+    }
+    .social-icons li{
+        display: inline-block;
+        text-align: center;
+		color: white;
+        padding: 5px;
+    }
+    .social-icons i{
+        color: white;
+        font-size: 25px;
+    }
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        color: #f18930;
+    }
+    .social-icons i:hover{
+        color: #f18930;
+    }
+    .bottom-bar{
+        background: #f18930;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 50px;
+    }
+    .bottom-bar p{
+        color: #343434;
+        margin: 0;
+        font-size: 16px;
+        padding: 7px;
+    }
+
+#navbar{
+    background: #f9f9f9;
+}
+#logo{
+    font-size: 36px;
+    font-weight: 550;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+#logo span{
+    color: #ffa500;
+}
+.navbar-toggler span{
+    color: #ffa500;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 20px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    background: #ffa500;
+    color: white;
+}
+#navbar form button{
+    background: orange;
+    color: white;
+    border: none;
+}
+<!-- Navbar End -->
+
+<!-- Header Start -->
+p.ex1 {
+	padding: 35px;
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.gallary{
+    margin-top: 50px;
+}
+.gallary .card{
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+.gallary .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.gallary .card img:hover{
+    transform: scale(1.1);
+}
+
+.center-justified {
+  text-align: justify;
+  margin: 0 auto;
+  width: 70em;
+}
+<!-- About V-MOOTZ End -->
+
+<!-- Section Book Start -->	
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+<!--Section Book End -->
+html {
+  scroll-behavior: smooth;
+}
+
+</style>
+	
+</head>
+<body>
+   
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+		  <img src="V-MOOTZ Logo.png" width=200 height=110 alt="logo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span><i class="fa-solid fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
+              <li class="nav-item"><a class="nav-link" href="About.html">ABOUT</a></li>
+              <li class="nav-item"><a class="nav-link" href="Products.html">PRODUCTS</a></li>
+			  <li class="nav-item"><a class="nav-link" href="Promotion.html">PROMOTION</a></li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search">
+              <button class="btn btn-primary" type="button">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- Navbar End -->
+	
+	<!-- Privacy-Notice V-MOOTZ Start -->
+	<div>
+	<img src="PrivacyNot.png" width=100% alt="Privacy Notice of V-MOOTZ">
+	</div>
+	<br />
+	  <div class="row">
+	  <div class="center-justified">
+	  <p><font size="2">Last updated: 01/04/2024</font><br /><br />
+	  At V-Mootz, we are committed to protecting the privacy of our users. This Privacy Notice explains how we collect, use, and disclose personal information about you when you use our website, mobile application, or services. We take the privacy of our users seriously and are dedicated to ensuring that your personal information is protected. We will only collect and use your personal information in accordance with this Privacy Notice. This Privacy Notice applies to our consumer websites, applications, emails, or other online consumer platforms (“Consumer Platforms”) that link to this Privacy Notice and describes how we collect, use, and disclose your personal information when you use our Consumer Platforms to engage with us and avail of our services (“Services”).</p><br />
+
+	  </div>
+	</div>
+	<!-- Privacy Notice V-MOOTZ End -->
+	
+	<!-- Table of Content Start -->
+	
+	<section class="privacy-notice" id="privacy-notice">
+	  <div class="container">
+
+		<div class="center-justified">
+		<p><font size="3"><b>Table of Contents</b></font>
+		<ol>
+		<li><a href="#1">WHAT WE COLLECT</a>
+			<ol>
+			<li type="i"><a href="#1.1">Personal information you provide us</a></li>
+			<li type="i"><a href="#1.2">Personal information we are required to collect</a></li>
+			<li type="i"><a href="#1.3">Personal Information generated automatically</a></li>
+			</ol>
+		</li>
+        <li><a href="#2">HOW AND WHY WE COLLECT AND USE</a>
+			<ol>
+			<li type="i"><a href="#2.1">To fulfill your request</a></li>
+			<li type="i"><a href="#2.2">To communicate with you</a></li>
+			<li type="i"><a href="#2.3">To send you marketing communications and newsletters</a></li>
+			<li type="i"><a href="#2.4">To conduct customer surveys or offers</a></li>
+			<li type="i"><a href="#2.5">To protect our vital interests, comply with legal obligations, and as otherwise permitted by law</a></li>
+			</ol>
+		</li>
+		<li><a href="#3">YOUR CHOICES AND OPTING OUT</a>
+			<ol>
+			<li type="i"><a href="#3.1">Marketing communications and newsletters</a></li>
+			</ol>
+		</li>
+		<li><a href="#4">YOUR DATA SUBJECT RIGHTS</a>
+			<ol>
+			<li type="i"><a href="#4.1">Access and rectification</a></li>
+			<li type="i"><a href="#4.2">Erasure, restriction, and objection</a></li>
+			<li type="i"><a href="#4.3">Portability</a></li>
+			<li type="i"><a href="#4.4">Withdrawal of consent</a></li>
+			<li type="i"><a href="#4.5">Exercising your rights</a></li>
+			</ol>
+		</li>
+		<li><a href="#5">OTHER IMPORTANT INFORMATION</a>
+			<ol>
+			<li type="i"><a href="#5.1">Terms and Conditions</a></li>
+			<li type="i"><a href="#5.2">Browsing</a></li>
+			<li type="i"><a href="#5.3">Link to other platforms</a></li>
+			<li type="i"><a href="#5.4">Changes to this Privacy Notice</a></li>
+			</ol>
+		</li>
+		<li><a href="#6">OTHER IMPORTANT INFORMATION</a>
+			<ol>
+			<li type="i"><a href="#6.1">Terms and Conditions</a></li>
+			<li type="i"><a href="#6.2">Browsing</a></li>
+			<li type="i"><a href="#6.3">Link to other platforms</a></li>
+			</ol>
+		</li>
+		<li><a href="#7">HOW TO CONTACT US</a>
+		</li>
+	  </div>
+	</section>
+	<!-- Table of Content End -->
+	
+	<!-- Content Start -->
+	<div class="center-justified">
+	<section id="1"><p><font size="4"><b>1. WHAT WE COLLECT</b></font></p></section>
+	<section id="1.1"<p><font size="4" style="color:grey">1.1. Personal information you provide us</font><br /><font size="3">We collect personal information you provide us when you use our Consumer Platforms such as your name, address or location, contact number, and email address. If applicable and necessary, we also collect personal information such as your recipient’s name, recipient’s address, recipient’s contact number, recipient’s email address (“Recipient Information”),order details, and other details disclosed as notes/special instructions (“Order Information”).<br /><br /> In relation to Recipient Information, should the recipient be a person other than yourself and you provide the recipient’s personal information when you use our Consumer Platforms, you warrant that you are allowed or have the permission to share with us the recipient’s personal data under your possession, and you agree to be solely responsible for ensuring that such person understands, agrees with, and accepts this Privacy Notice and for protecting the privacy of the recipient’s personal data under your possession. We shall not be liable for any privacy concern arising from your sharing of the Recipient’s Information with us.</font></p></section>
+	<section id="1.2"<p><font size="4" style="color:grey">1.2. Personal information we are required to collect</font><br /><font size="3">We collect personal information as required under any applicable laws, rules, or regulations, including compliance with our legal obligations, such as the name and identification number indicated in the relevant Senior Citizen or Persons with Disability identification card (“Government-Mandated Discount Information”) and a copy of such identification card.</font></p></section>
+	<section id="1.3"<p><font size="4" style="color:grey">1.3. Personal Information generated automatically</font><br /><font size="3">In addition to personal information you provide us, we also collect your personal information generated automatically when you use our Consumer Platforms such as your order history.</font></p></section><br />
+	
+	<section id="2"><p><font size="4"><b>2. HOW AND WHY WE COLLECT AND USE</b></font></p></section>
+	<section id="2.1"><p><font size="4" style="color:grey">2.1. To fulfill your request</font><br /><font size="3">If you choose to use certain features of our Consumer Platforms to avail of our Services, we collect and use your Profile Information to fulfill your request.</font></p></section>
+	<section id="2.2"><p><font size="4" style="color:grey">2.2. To communicate with you</font><br /><font size="3">When you contact us through our Consumer Platforms, we collect and use your Profile Information and any additional personal information you provide to allow us to address your concerns or questions.</font><p></section>
+	<section id="2.3"><p><font size="4" style="color:grey">2.3. To send you marketing communications and newsletters</font><br /><font size="3">You have the option to agree to receive marketing communications from us through SMS, email, social media, messaging application, or other similar means, as well as to subscribe to our newsletters. If you choose to do so, we use your Profile Information you provided us during the registration process to fulfill your request to subscribe to our marketing communications and newsletters. With your consent, we use your Profile Information to send you our marketing communications and newsletters.</font></p></section>
+	<section id="2.4"><p><font size="4" style="color:grey">2.4. To conduct customer surveys or offers</font><br /><font size="3">You have the option to participate in customer surveys or offers. If you choose to participate, we use your Profile Information you provided us during the registration process to fulfill your request to participate in our customer surveys or offers. With your consent, we use your Profile Information and any additional personal information we request, which you voluntarily provide, to contact you for market research, provide you with relevant offers, understand your preferences, and improve our services.</font></p></section>
+	<section id="2.5"><p><font size="4" style="color:grey">2.5. To protect our vital interests, comply with legal obligations, and as otherwise permitted by law</font><br /><font size="3">We may use your personal information to prevent, detect, and fight fraud or other illegal or unauthorized activities, protect our company, customers, brands, and websites, assist in investigations, enforce and defend our rights and assets, comply with laws, regulations, court orders, or other legal obligations, or for any other reasons permitted by law.</font></p></section><br />
+
+	<section id="3"><p><font size="4"><b>3. YOUR CHOICES AND OPTING OUT</b></font></p></section>
+	<section id="3.1"><p><font size="4" style="color:grey">3.1. Marketing communications and newsletters</font><br /><font size="3">You can choose to stop receiving our marketing communications and newsletters by following the instructions contained in our marketing communications and newsletters or by contacting us. Please refer to 10. How to contact us for information on how to contact us.</font></p></section><br />
+	
+	<section id="4"><p><font size="4"><b>4. YOUR DATA SUBJECT RIGHTS</b></font><br /><font size="3">Subject to the requirements of applicable laws and regulations, you have the following rights with respect to your personal information we have collected:</font></p></section>
+	<section id="4.1"><p><font size="4" style="color:grey">4.1. Access and rectification</font><br /><font size="3">You can ask us for a copy of the personal information we hold about you or inform us of any changes or corrections to your personal information.</font></p></section>
+	<section id="4.2"><p><font size="4" style="color:grey">4.2. Erasure, restriction, and objection</font><br /><font size="3">In some cases, you can ask us to erase, block, or restrict the processing of the personal information we hold about you or object to particular ways in which we are using your personal information.</font></p></section>
+	<section id="4.3"><p><font size="4" style="color:grey">4.3. Portability</font><br /><font size="3">In some cases, you can ask us to send the personal information you provided us to a third party.</font></p></section>
+	<section id="4.4"><p><font size="4" style="color:grey">4.4. Withdrawal of consent</font><br /><font size="3">Where we are processing your personal information on the basis of your consent, you are entitled to withdraw that consent subject to any applicable law.</font></p></section>
+	<section id="4.5"><p><font size="4" style="color:grey">4.5. Exercising your rights</font><br /><font size="3">Please refer to 7. <a href="#7">How to contact us</a> for information on how to exercise these rights.</font></p></section><br />
+
+	<section id="5"><p><font size="4"><b>5. OTHER IMPORTANT INFORMATION</b></font></p></section>
+	<section id="5.1"><p><font size="4" style="color:grey">5.1. Terms and Conditions</font><br /><font size="3">Your use of our Consumer Platforms is subject to applicable Terms and Conditions linked within our Consumer Platforms.</font></p></section>
+	<section id="5.2"><p><font size="4" style="color:grey">5.2. Browsing</font><br /><font size="3">In certain cases, such as when you are simply browsing any of our marketing websites, we do not collect any personal information from you. However, we may collect cookies referred to in 6. <a href="#6">Cookie Policy</a> below.</font></p></section>
+	<section id="5.3"><p><font size="4" style="color:grey">5.3. Link to other platforms</font><br /><font size="3">Our Consumer Platforms may contain links to third-party websites and services that we do not operate and are outside of our control. These third-party websites and services have their own privacy practices and we do not accept any responsibility or liability for the security or privacy of any personal information collected by these third-party websites and services. We recommend you exercise caution and review the privacy notices or statements of the third-party websites and services you use.</font></p></section>
+	<section id="5.4"><p><font size="4" style="color:grey">5.4. Changes to this Privacy Notice</font><br /><font size="3">We may modify this Privacy Notice from time to time and we will place the date when we last updated this Privacy Notice at the top portion of this page. We will notify you of material changes by appropriate means.</font></p></section><br />
+
+	<section id="6"><p><font size="4"><b>6. COOKIE POLICY</b></font></p>
+	<section id="6.1"><p><font size="4" style="color:grey">6.1. Definition</font><br /><font size="3">Cookies are small files that are placed on your device when you visit a website or use an app. It typically contains information about the website or app itself and a unique identifier that allows the site website or app to recognize your browser or device when you return.</font></p></section>
+	<section id="6.2"><p><font size="4" style="color:grey">6.2. Purposes</font><br /><font size="3">We may use cookies to understand how you use our Consumer Platforms, remember your preferences, track your activity, and personalize your experience. This allows us to improve your experience in using our Consumer Platforms. </font></p></section>
+	<section id="6.3"><p><font size="4" style="color:grey">6.3. Disabling Cookies</font><br /><font size="3">You may disable cookies via your browser settings or by changing your cookie settings in your device. However, if you disable certain cookies, you may not be able to take advantage of the full features of the relevant Platform.</font></p></section><br />
+
+	<section id="7"><p><font size="4"><b>7. HOW TO CONTACT US</b></font><br /><font size="3" style="color:grey">If you have any questions regarding this Privacy Notice or our use of your personal information, please contact us through our Data Protection Officer via this number, <a href="tel:0916 372 1702">0916 372 1702</a> or through our<a href="https://www.instagram.com/v_mootz.ph/"> instagram. </a><br /><br />
+	If you have a) concerns or feedback on your orders made directly from V-MOOTZ and b) questions regarding the aforementioned this Terms and Conditions, please contact us through:
+	For orders made through <a href="https://help.grab.com/passenger/en-ph//">GRAB</a> and <a href="https://www.foodpanda.ph/contents/contact.htm">FOOD PANDA</a></font></p></section>
+	</div>
+	<br /><br />
+	
+		   <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>Email: vmootz@gmail.com</p>
+                <p>Phone: 0916 372 1702</p>
+                <p>Zobel Street, Barangay 663 Ermita, Manila</p>
+            </div>
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                 <ul class="list">
+                    <li><a href="Promotion.html">PROMOTION</a></li>
+                    <li><a href="PrivacyNotice.html">PRIVACY NOTICE</a></li>
+                    <li><a href="TermsCondition.html">TERMS & CONDITION</a></li>
+                    <li><a href="CustomerCare.html">CUSTOMER CARE</a></li>
+                 </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                 <li><a href="https://www.facebook.com/profile.php?id=100092534678077"><i class="fab fa-facebook"></i></a></li>
+                 <li><a href="https://www.instagram.com/v_mootz.ph/"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+                </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2024 V-MOOTZ. All rights reserved</p>
+        </div>
+    </footer>
+	
+	
+	
+	
+	
+	

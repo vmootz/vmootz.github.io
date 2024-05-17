@@ -1,0 +1,453 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-MOOTZ</title>
+
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!-- Bootstrap Link -->
+
+
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Font Awesome Cdn -->
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+
+	
+	<style>
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+button {
+    padding: 1em 2.1em 1.1em;
+    border-radius: 4px;
+    margin: 8px;
+    border: none;
+    background-color: orange;
+    color: #000000;
+    font-weight: 800;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: 0em -0.2rem 0em #B50717 inset;
+    transition: color 3s ease-in-out;
+}
+.center {
+  margin: 0;
+  position: absolute;
+  left: 71%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.main-text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 650;
+	font-size: 50px;
+}
+
+#navbar{
+    background: #f9f9f9;
+}
+#logo{
+    font-size: 36px;
+    font-weight: 550;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+#logo span{
+    color: #ffa500;
+}
+.navbar-toggler span{
+    color: #ffa500;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 20px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    background: #ffa500;
+    color: white;
+}
+#navbar form button{
+    background: orange;
+    color: white;
+    border: none;
+}
+<!-- Navbar End -->
+
+<!-- Home Section Start -->
+.home{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(VMOOTZbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(VMOOTZbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color: white;
+    font-size: 38px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+}
+.home .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.changecontent::after{
+    content: ' ';
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0%{content: "V-Stickz";}
+    10%{content: "V-Ballz";}
+    20%{content: "V-Stickz";}
+    30%{content: "V-Ballz";}
+    40%{content: "V-Stickz";}
+    50%{content: "V-Ballz";}
+    60%{content: "V-Stickz";}
+    70%{content: "V-Ballz";}
+    80%{content: "V-Stickz";}
+    90%{content: "V-Ballz";}
+    100%{content: "V-Stickz";}
+} 
+.home .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.home .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.home .content a:hover{
+    background: #ffa500;
+    color: white;
+}
+@media (max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+}
+@media (max-width:450px){
+    .home .content h5{
+        font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+}
+/* Home Section End */
+<!-- Home Section End -->
+
+<!-- Section Book Start -->
+.book{
+    background: #f9f9f9;
+    padding: 50px;
+}
+.main-text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+.main-text h1 span{
+    color: #ffa500;
+}
+.book .card{
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px -6px black;
+}
+.book .row{
+    margin-top: 30px;
+}
+.book form input{
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 200px;
+}
+.book .submit{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: #ffa500;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.book .submit:hover{
+    width: 170px;
+}
+@media (max-width:765px){
+    .book{
+        padding: 0;
+    }
+    .main-text h1{
+        padding: 20px;
+    }
+}
+<!-- Section Book End -->
+
+<!-- Section Services Start -->
+.book{
+    background: #f9f9f9;
+    padding: 50px;
+}
+.main-text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+.main-text h1 span{
+    color: #ffa500;
+}
+.book .card{
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px -6px black;
+}
+.book .row{
+    margin-top: 30px;
+}
+.book form input{
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 200px;
+}
+.book .submit{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: #ffa500;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.book .submit:hover{
+    width: 170px;
+}
+@media (max-width:765px){
+    .book{
+        padding: 0;
+}
+.main-text h1{
+        padding: 20px;
+}
+<!-- Section Services End -->
+
+<!-- Section Gallery  Start -->
+.gallary{
+    margin-top: 50px;
+}
+.gallary .card{
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+.gallary .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.gallary .card img:hover{
+    transform: scale(1.1);
+}
+<!-- Section Gallery  End -->
+
+<!-- Footer  Start -->
+
+<!-- Footer  End -->
+
+</style>
+	
+</head>
+<body>
+   
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+		  <img src="V-MOOTZ Logo.png" width=200 height=110 alt="logo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span><i class="fa-solid fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
+              <li class="nav-item"><a class="nav-link" href="About.html">ABOUT</a></li>
+              <li class="nav-item"><a class="nav-link" href="Products.html">PRODUCTS</a></li>
+			  <li class="nav-item"><a class="nav-link" href="Promotion.html">PROMOTION</a></li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search">
+              <button class="btn btn-primary" type="button">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- Navbar End -->
+
+    <!-- Home Section Start -->
+    <div class="home">
+        <div class="content">
+            <h5>Welcome To V-MOOTZ</h5>
+            <h1>Order Now! <span class="changecontent"></span></h1>
+            <p>Where Crave Meets Health, in Every Cheesy Bite!</p>
+            <a href="#details">MORE DETAILS</a>
+        </div>
+    </div>
+    <!-- Home Section End -->
+	<br />
+	<!-- Section Book Start -->
+		<section class="book" id="details">
+		  <div class="container">
+
+			<div class="main-text">
+			  <h1>About <span>US</span></h1>
+			</div>
+			
+			<div class="row">
+
+			  <div class="col-md-6 py-3 py-md-0">
+				<div class="card">
+				  <img src="AreaCoverage.png" alt="Location of the Store">
+				</div>
+			  </div>
+			  
+			  <div class="col-md-6 py-3 py-md-0">
+				<br />
+				<p style="text-align:center"><font size="6">What's in the house for today! 🧀</font></p>
+				<br />
+				<p style="text-align:justify"><font size="4.5">The Business, V-Mootz, offers a Lacto-ovo vegetarian type of snack/food. Specifically, V-mootz will provide a healthier imitation of fries by combining one prominent and unique ingredient. V-Mootz decided to concoct a product where business proponents will make a unique product while still having a familiar taste so the consumers would be clear and confident about the snack while still having a typical taste so it would be easy for consumers to take the extraordinary ingredients of the products we will include.
+				<br /><br /><br />
+				Get ready for something even more exciting and cheesy coming your way. Now, let's take a sneak peek at what V-Mootz has in store. Introducing... the menu! And hey, don't miss the chance to be part of our soft opening with a fantastic 10% discount on all our products! Just follow our socials and give our page a thumbs up to claim your coupon. Stay tuned for more cheesy announcements! </font></p>
+				<br />
+				<p style="text-align:center">
+				<a href="About.html" id="center">
+				<button>LEARN MORE</button>
+				</a>
+				</p>
+			  </div>
+			</div>
+		  </div>   
+		</section>
+	<!-- Section Book End -->
+	<br />	<br />
+    <!-- Section Services Start -->
+	<section class="book" id="details">
+	<img src="Promotion.png" width=100% height=70% alt="Coupons/Discounts 10%">
+	</section>
+    <!-- Section Services End -->
+	<br />
+    <!-- Section Gallary Start -->
+	<section class="book" id="details">
+		  <div class="container">
+
+			<div class="main-text">
+			  <h1><span>G</span>rab yours!</h1>
+			</div>
+			
+			<div class="row">
+			  
+			  <div class="col-md-6 py-3 py-md-7">
+				<p style="text-align:Justify"><font size="6">The moment you've been waiting for is finally <font color="orange"><b>HERE!</b></font></font></p>
+				<p style="text-align:justify"><font size="4.5">
+				Get ready to embark on a journey of cheesy delights as we proudly announce the 
+				opening of our physical store at Zobel Street, Barangay 663 Ermita, Manila. Don't miss out on the fun!
+				Join us for our opening and enjoy an exclusive <b>10% discount</b> on all our products.
+				<br /><br />
+				Join us in celebrating the opening of our physical store from Monday to Friday. Don't forget to treat yourself to a delicious bite at V-mootz. The V-Mootz is now open from 10 am to 2 pm. Grab yours by messaging us on our Facebook Page and Instagram.
+				Contact us <a href="tel:0916 372 1702">@ 0916 372 1702.</a>
+				</font></p><br />
+				<div>
+				<p style="text-align:center">
+				<a href="Products.html">
+				<button >ORDER NOW</button>
+				</a>
+				</p>
+				</div>
+			  </div>
+			  <div class="col-md-5 py-5 py-md-0">
+				<div class="card">
+				<div style="display: flex; justify-content: center;">
+				  <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F100092534678077%2Fvideos%2F349116084148509%2F&show_text=false&width=476&t=0" width="580" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+				  <br /><br />
+				</div>
+			  </div>
+			</div>
+		  </div>   
+		 </div>
+		</section>
+ 
+</body>
+</html>
